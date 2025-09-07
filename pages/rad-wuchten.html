@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nach der Reifenmontage – warum Räder wuchten?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f9fafb;         /* helles Grau */
+      --panel: #ffffff;      /* weiß */
+      --text: #111827;       /* fast schwarz */
+      --muted: #4b5563;      /* grau */
+      --accent: #2563eb;     /* blau */
+      --ok: #059669;         /* grün */
+      --warn: #d97706;       /* orange */
+      --danger: #dc2626;     /* rot */
+      --ring: rgba(37,99,235,.25);
+      --shadow: 0 6px 16px rgba(0,0,0,.08), 0 3px 6px rgba(0,0,0,.05);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text); background: var(--bg);
+    }
+
+    .wrap { max-width: 1050px; margin: 0 auto; padding: 32px 20px 56px; }
+
+    header {
+      display: grid; grid-template-columns: 64px 1fr auto; gap: 18px; align-items: center;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      padding: 18px 18px; border-radius: 18px; box-shadow: var(--shadow);
+      position: sticky; top: 16px; backdrop-filter: blur(8px); z-index: 10;
+    }
+
+    .logo {
+      width: 64px; height: 64px; border-radius: 16px; display: grid; place-items: center; 
+      background: conic-gradient(from 180deg at 50% 50%, rgba(37,99,235,.15), rgba(5,150,105,.15), rgba(37,99,235,.15));
+      box-shadow: inset 0 0 18px rgba(0,0,0,.05), 0 4px 12px rgba(0,0,0,.1);
+    }
+
+    h1 { font-family: Rubik, Inter, system-ui; font-weight: 800; font-size: clamp(26px, 3.2vw, 42px); letter-spacing: .2px; margin: 0; }
+    .subtitle { color: var(--muted); margin-top: 4px; font-size: clamp(14px, 1.4vw, 16px); }
+
+    .cta {
+      display: inline-flex; gap: 10px; align-items: center; padding: 10px 14px; border-radius: 999px; cursor: pointer;
+      border: 1px solid #d1d5db; background: #f3f4f6;
+      transition: transform .15s ease, box-shadow .2s ease; text-decoration: none; color: var(--text); font-weight: 600;
+    }
+    .cta:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
+
+    main { margin-top: 28px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid #e5e7eb; border-radius: 22px; padding: 22px; box-shadow: var(--shadow);
+    }
+
+    .q { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 14px; }
+    .q b { font-weight: 700; }
+    .q .badge { font-size: 12px; color: var(--accent); letter-spacing: .3px; text-transform: uppercase; }
+
+    .answer ul { margin: 0; padding-left: 22px; }
+    .answer li { margin: 10px 0; line-height: 1.5; }
+    .answer li strong { font-weight: 700; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .chip {
+      padding: 8px 12px; border-radius: 999px; border: 1px solid #e5e7eb; background: #f9fafb;
+      font-size: 12px; letter-spacing: .2px; color: var(--muted);
+    }
+
+    .side h3 { margin: 4px 0 12px; font-size: 18px; }
+    .callout {
+      display: grid; grid-template-columns: 28px 1fr; gap: 10px; align-items: start; padding: 14px; border-radius: 16px; 
+      border: 1px dashed #d1d5db; background: #f3f4f6;
+    }
+
+    footer { margin-top: 24px; color: var(--muted); font-size: 13px; text-align: center; }
+
+    .sep { height: 1px; background: #e5e7eb; margin: 20px 0; }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      header { grid-template-columns: 48px 1fr; }
+    }
+
+    @media print {
+      body { background: #fff; color: #111; }
+      header, .cta { display: none !important; }
+      .panel { box-shadow: none; border: 1px solid #ddd; }
+      .chip { border-color: #bbb; color: #333; background: #fff; }
+      a[href]:after { content: ""; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6" opacity=".9"/>
+          <circle cx="12" cy="12" r="4" fill="currentColor" opacity=".9"/>
+        </svg>
+      </div>
+      <div>
+        <h1>Nach der Reifenmontage – Räder wuchten</h1>
+        <div class="subtitle">Frage & Antwort für Werkstatt-Alltag und Fahrsicherheit</div>
+      </div>
+      <a class="cta" href="#" onclick="window.print();return false;" title="Seite drucken oder als PDF speichern">
+        Drucken / PDF
+      </a>
+    </header>
+
+    <main>
+      <section class="panel">
+        <div class="q">
+          <div class="badge">Frage</div>
+        </div>
+        <p><b>Nach der Reifenmontage sind die Räder zu wuchten – welche Folgen haben nicht ausgewuchtete Räder?</b></p>
+        <div class="sep"></div>
+        <div class="q">
+          <div class="badge">Antwort</div>
+        </div>
+        <div class="answer">
+          <ul>
+            <li><strong>Vibrationen</strong>: Spürbar im Lenkrad, an Sitzen oder am Fahrzeugboden – besonders bei höheren Geschwindigkeiten.</li>
+            <li><strong>Ungleichmäßiger Reifenverschleiß</strong>: Schnellere, unregelmäßige Abnutzung; geringere Laufleistung des Reifens.</li>
+            <li><strong>Zusatzbelastung für Radlager & Fahrwerk</strong>: Schwingungen beanspruchen Lager, Stoßdämpfer und Lenkung → vorzeitiger Verschleiß.</li>
+            <li><strong>Geringere Fahrsicherheit</strong>: Reduzierte Haftung kann längere Bremswege und instabiles Fahrverhalten verursachen.</li>
+            <li><strong>Höherer Kraftstoffverbrauch</strong>: Unruher Lauf erhöht den Rollwiderstand.</li>
+            <li><strong>Niedrigerer Fahrkomfort</strong>: Unruhe im Fahrzeug – besonders auf langen Strecken störend.</li>
+          </ul>
+
+          <div class="tags" aria-label="Stichworte">
+            <span class="chip">#Wuchten</span>
+            <span class="chip">#Fahrsicherheit</span>
+            <span class="chip">#Verschleiß</span>
+            <span class="chip">#Komfort</span>
+            <span class="chip">#Kraftstoff</span>
+          </div>
+        </div>
+      </section>
+
+      <aside class="panel side">
+        <h3>Praxis-Tipp</h3>
+        <div class="callout">
+          <p style="margin:0; line-height:1.5">Nach jeder Reifenmontage <strong>statisch und dynamisch</strong> wuchten. Bei Kundenhinweisen auf Lenkradvibrationen zusätzlich <em>Probefahrt</em> und <em>Radzentrierung</em> prüfen.</p>
+        </div>
+
+        <div class="sep"></div>
+
+        <h3>Merkliste für die Werkstatt</h3>
+        <ul style="margin:0; padding-left:18px; line-height:1.6">
+          <li>Radnabe & Auflageflächen säubern</li>
+          <li>Reifenluftdruck vor dem Wuchten korrigieren</li>
+          <li>Konus richtig zentrieren / Flanschadapter nutzen</li>
+          <li>Wuchtgewichte passend & sicher befestigen</li>
+          <li>Nach Montage Probefahrt (80–120 km/h)</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      Diese Seite kann gedruckt oder als PDF gespeichert werden. © Werkstatt-Notiz
+    </footer>
+  </div>
+</body>
+</html>
