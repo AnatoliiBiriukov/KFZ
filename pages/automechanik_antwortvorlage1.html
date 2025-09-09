@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Antwort — Automechanik</title>
+  <style>
+    :root{--bg:#f6f8fa;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#0f172a}
+    .container{max-width:900px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.4rem}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    section + section{margin-top:14px}
+    h2{font-size:1.05rem;margin:0 0 8px 0}
+    p,li{line-height:1.5;color:#0f172a}
+    ul{padding-left:1.1rem}
+    ol{padding-left:1.1rem}
+    .badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:4px 8px;border-radius:999px;font-size:0.8rem}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .full{grid-column:1/-1}
+    .img-placeholder{width:100%;height:220px;background:linear-gradient(90deg,#eef2ff,#ffffff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.95rem}
+    footer{margin-top:18px;color:var(--muted);font-size:0.85rem;text-align:center}
+    .tool-list li{margin-bottom:6px}
+    .warning{background:#fff7ed;border-left:4px solid #f97316;padding:10px;border-radius:6px}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">AM</div>
+      <div>
+        <h1>Automechanik — Diagnosen & Reparaturanleitung</h1>
+        <div class="meta">Antwort erstellt von ChatGPT • Detaillierte, schrittweise Anleitung auf Deutsch</div>
+      </div>
+    </header>
+
+    <article class="card">
+      <section id="frage">
+        <h2>1. Frage</h2>
+        <p>Warum wird beim Ölwechsel die Ablassschraube mit neuer Dichtung montiert?</p>
+      </section>
+
+      <section id="zusammenfassung" class="full">
+        <h2>2. Kurzzusammenfassung</h2>
+        <p>Die Dichtung an der Ölablassschraube ist ein Verschleißteil. Sie verhindert Ölleckagen, gleicht Unebenheiten zwischen Schraube und Ölwanne aus und sollte bei jedem Ölwechsel ersetzt werden, um die Dichtwirkung zu gewährleisten.</p>
+      </section>
+
+      <section id="diagnose">
+        <h2>3. Wahrscheinliche Ursachen / Diagnose</h2>
+        <ul>
+          <li>Alte Dichtung verformt sich beim Anziehen der Schraube dauerhaft (Plastische Verformung).</li>
+          <li>Metall- oder Kupferdichtungen härten durch Hitze und Druck aus und verlieren ihre Elastizität.</li>
+          <li>Wiederverwendung führt zu möglicher Undichtigkeit oder Tropfenbildung.</li>
+        </ul>
+      </section>
+
+      <section id="symptome">
+        <h2>4. Typische Symptome</h2>
+        <ul>
+          <li>Ölflecken unter dem Fahrzeug nach Ölwechsel.</li>
+          <li>Langsamer Ölverlust über mehrere Tage/Wochen.</li>
+          <li>Erhöhter Ölverbrauch ohne sichtbaren Grund.</li>
+        </ul>
+      </section>
+
+      <section id="diagnoseschritte" class="full">
+        <h2>5. Schritt-für-Schritt Diagnose (mit Prüfpriorität)</h2>
+        <ol>
+          <li>Fahrzeug auf Hebebühne oder Böcke stellen und Ölwanne auf Dichtheit prüfen.</li>
+          <li>Um Ablassschraube herum auf Ölspuren kontrollieren.</li>
+          <li>Falls vorhanden, Schraube leicht nachziehen (mit Drehmoment beachten) und prüfen, ob Dichtung noch abdichtet.</li>
+        </ol>
+      </section>
+
+      <section id="reparaturanleitung">
+        <h2>6. Reparaturanleitung — Schritt für Schritt</h2>
+        <ol>
+          <li>Motoröl ablassen, alte Ablassschraube mit Dichtung entfernen.</li>
+          <li>Dichtfläche an der Ölwanne reinigen (kein Schmutz oder Metallspäne zurücklassen).</li>
+          <li>Neue Dichtung auf die Ablassschraube setzen und Schraube mit vorgeschriebenem Drehmoment einschrauben.</li>
+          <li>Neues Öl einfüllen, Motor starten und auf Dichtheit prüfen.</li>
+        </ol>
+      </section>
+
+      <section id="werkzeuge_ersatzteile">
+        <h2>7. Werkzeuge & Ersatzteile</h2>
+        <ul class="tool-list">
+          <li>Steckschlüssel oder Ringschlüssel passend zur Ablassschraube</li>
+          <li>Drehmomentschlüssel (üblich: 25–35 Nm, fahrzeugabhängig)</li>
+          <li>Neue Kupfer- oder Aludichtung (fahrzeugspezifisch)</li>
+          <li>Bremsenreiniger oder Tuch zur Reinigung</li>
+        </ul>
+      </section>
+
+      <section id="zeit_kosten">
+        <h2>8. Zeitaufwand & grobe Kostenabschätzung</h2>
+        <p>Der Austausch der Dichtung dauert nur wenige Minuten im Rahmen des Ölwechsels. Kosten: meist 0,50–2 € pro Dichtung.</p>
+      </section>
+
+      <section id="sicherheit" class="full">
+        <h2>9. Sicherheits-Hinweise</h2>
+        <div class="warning">
+          <p><strong>Achtung:</strong> Heißes Motoröl kann schwere Verbrennungen verursachen. Ablassschraube nur mit geeigneten Handschuhen lösen. Fahrzeug stets sichern (Unterstellböcke, Handbremse).</p>
+        </div>
+      </section>
+
+      <section id="haeufige_fehler">
+        <h2>10. Häufige Fehler & Tipps</h2>
+        <ul>
+          <li>Alte Dichtung wiederverwenden → führt zu Undichtigkeiten.</li>
+          <li>Ablassschraube zu fest anziehen → Gewinde in der Ölwanne kann beschädigt werden.</li>
+          <li>Falsche Dichtungsgröße verwenden → keine vollständige Abdichtung.</li>
+        </ul>
+      </section>
+
+      <section id="bilder" class="full">
+        <h2>11. Bilder / Diagramme</h2>
+        <div class="img-placeholder">Beispielbilder: Ablassschraube mit neuer Kupferdichtung, Position an der Ölwanne.</div>
+      </section>
+
+      <section id="quellen" class="full">
+        <h2>12. Weiterführende Hinweise & Quellen</h2>
+        <p>Fahrzeughandbuch, Herstellerangaben zu Ölwechselintervallen und Drehmomenten, gängige Werkstattempfehlungen.</p>
+      </section>
+
+      <footer style="margin-top:12px">
+        <p class="meta">Hinweis: Diese Anleitung ersetzt nicht die Werkstattberatung. Prüfe Bordliteratur und Sicherheitsdatenblätter.</p>
+      </footer>
+    </article>
+
+  </div>
+</body>
+</html>
