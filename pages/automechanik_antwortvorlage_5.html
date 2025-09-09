@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Antwort — Automechanik</title>
+  <style>
+    :root{--bg:#f6f8fa;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a4;--question:#fef3c7;--answer:#dcfce7;--summary:#e0f2fe}
+    html,body{height:100%;margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#0f172a}
+    .container{max-width:900px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{margin:0;font-size:1.4rem}
+    .meta{color:var(--muted);font-size:0.9rem}
+    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    section + section{margin-top:14px}
+    h2{font-size:1.05rem;margin:0 0 8px 0}
+    p,li{line-height:1.5;color:#0f172a}
+    ul{padding-left:1.1rem}
+    ol{padding-left:1.1rem}
+    .badge{display:inline-block;background:#eef2ff;color:#3730a3;padding:4px 8px;border-radius:999px;font-size:0.8rem}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .full{grid-column:1/-1}
+    .img-placeholder{width:100%;height:220px;background:linear-gradient(90deg,#eef2ff,#ffffff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:0.95rem}
+    footer{margin-top:18px;color:var(--muted);font-size:0.85rem;text-align:center}
+    .tool-list li{margin-bottom:6px}
+    .warning{background:#fff7ed;border-left:4px solid #f97316;padding:10px;border-radius:6px}
+    .question-box{background:var(--question);padding:10px;border-left:4px solid #d97706;border-radius:6px;font-weight:600}
+    .answer-box{background:var(--answer);padding:12px;border-left:4px solid #16a34a;border-radius:6px;font-weight:600;margin-top:10px}
+    .summary-box{background:var(--summary);padding:10px;border-left:4px solid #0284c7;border-radius:6px;font-weight:600}
+    @media (max-width:720px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">AM</div>
+      <div>
+        <h1>Automechanik — Diagnosen & Reparaturanleitung</h1>
+        <div class="meta">Antwort erstellt von ChatGPT • Detaillierte, schrittweise Anleitung auf Deutsch</div>
+      </div>
+    </header>
+
+    <!-- Frage 5 -->
+    <article class="card">
+      <section id="frage">
+        <h2>1. Frage</h2>
+        <div class="question-box">Welche Prüfungen gehören zu einer Sichtprüfung an Bremsen?</div>
+      </section>
+
+      <section id="zusammenfassung" class="full">
+        <h2>2. Kurzzusammenfassung</h2>
+        <div class="summary-box">Bei der Sichtprüfung an Bremsen werden Bremsbeläge, Bremsscheiben/Trommeln, Bremsleitungen und Schläuche, Flüssigkeitsstand sowie Dichtheit und Korrosion kontrolliert.</div>
+      </section>
+
+      <section id="diagnose">
+        <h2>3. Wichtige Prüfpunkte im Detail</h2>
+        <ul>
+          <li><strong>Bremsbeläge:</strong> Stärke, gleichmäßiger Verschleiß, keine Risse oder Ablösungen.</li>
+          <li><strong>Bremsscheiben/Trommeln:</strong> Dicke, Riefen, Hitzerisse, Rostbildung.</li>
+          <li><strong>Bremsleitungen und Schläuche:</strong> Keine Undichtigkeiten, keine Scheuerstellen, keine Risse.</li>
+          <li><strong>Bremsflüssigkeit:</strong> Stand im Behälter, Farbe (dunkel verfärbt = Wechsel notwendig).</li>
+          <li><strong>Dichtheit:</strong> Kein Flüssigkeitsaustritt an Zylindern oder Verbindungen.</li>
+          <li><strong>Korrosion:</strong> An Bremssattel, Leitungen und Anbauteilen.</li>
+        </ul>
+      </section>
+
+      <section id="diagnoseschritte" class="full">
+        <h2>4. Schritt-für-Schritt Vorgehen</h2>
+        <ol>
+          <li>Rad abnehmen für freie Sicht auf Bremselemente.</li>
+          <li>Bremsbeläge und Scheiben optisch prüfen.</li>
+          <li>Bremsleitungen und Schläuche entlang des Fahrzeugs kontrollieren.</li>
+          <li>Bremsflüssigkeitsbehälter öffnen und Stand prüfen.</li>
+          <li>Auf Feuchtigkeitsspuren an Zylindern und Anschlüssen achten.</li>
+        </ol>
+      </section>
+
+      <section id="werkzeuge_ersatzteile">
+        <h2>5. Werkzeuge & Hilfsmittel</h2>
+        <ul class="tool-list">
+          <li>Wagenheber und Unterstellböcke</li>
+          <li>Radkreuz oder Schlagschrauber</li>
+          <li>Taschenlampe/Arbeitslampe</li>
+          <li>Schutzhandschuhe</li>
+        </ul>
+      </section>
+
+      <section id="zeit_kosten">
+        <h2>6. Zeitaufwand & Kosten</h2>
+        <p>Die reine Sichtprüfung dauert pro Achse ca. 15–20 Minuten. Kosten entstehen nur für Arbeitszeit in der Werkstatt.</p>
+      </section>
+
+      <section id="sicherheit" class="full">
+        <h2>7. Sicherheits-Hinweise</h2>
+        <div class="warning">
+          <p><strong>Achtung:</strong> Fahrzeug sicher abstützen, bevor ein Rad abgenommen wird. Bremsanlage darf nicht mit öligen Fingern berührt werden.</p>
+        </div>
+      </section>
+
+      <section id="haeufige_fehler">
+        <h2>8. Häufige Fehler & Tipps</h2>
+        <ul>
+          <li>Nur Beläge prüfen, Scheiben vernachlässigen.</li>
+          <li>Undichtigkeiten übersehen, weil nur oberflächlich geschaut wird.</li>
+          <li>Bremsflüssigkeit nur am Stand, nicht an der Farbe beurteilt.</li>
+        </ul>
+      </section>
+
+      <section id="bilder" class="full">
+        <h2>9. Bilder / Diagramme</h2>
+        <div class="img-placeholder">Beispiel: Ansicht Bremssattel mit Belägen und Scheibe, Bremsleitung mit Korrosion.</div>
+      </section>
+
+      <section id="ergebnis" class="full">
+        <h2>10. Endergebnis</h2>
+        <div class="answer-box">Die Sichtprüfung an Bremsen ist korrekt durchgeführt, wenn Beläge, Scheiben, Leitungen und Flüssigkeitsstand überprüft und keine Schäden oder Undichtigkeiten festgestellt wurden.</div>
+      </section>
+
+      <footer style="margin-top:12px">
+        <p class="meta">Hinweis: Diese Anleitung ersetzt nicht die Werkstattberatung. Prüfe Bordliteratur und Herstellervorgaben.</p>
+      </footer>
+    </article>
+
+  </div>
+</body>
+</html>
